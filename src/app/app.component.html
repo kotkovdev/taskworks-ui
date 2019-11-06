@@ -1,0 +1,17 @@
+<div class="container-fluid" id="app-container">
+    <div class="row">
+        <div class="col-2" id="menu">
+            <app-menu></app-menu>
+        </div>
+        <div class="col-8" id="main-container">
+            <app-search></app-search>
+            <div class="card" id="app-card">
+                <div class="row">
+                    <div class="col-md-12">
+                        <router-outlet></router-outlet>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
