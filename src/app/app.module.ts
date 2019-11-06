@@ -9,6 +9,7 @@ import { MenuComponent } from './menu/menu.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { SearchComponent } from './search/search.component';
 import { HeaderComponent } from './header/header.component';
+import { TaskComponent } from './task/task.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HeaderComponent } from './header/header.component';
     MenuComponent,
     TasksComponent,
     SearchComponent,
-    HeaderComponent
+    HeaderComponent,
+    TaskComponent
   ],
   imports: [
     BrowserModule,
