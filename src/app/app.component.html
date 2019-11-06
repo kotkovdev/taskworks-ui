@@ -1,17 +1,32 @@
-<div class="container-fluid" id="app-container">
-    <div class="row">
-        <div class="col-2" id="menu">
-            <app-menu></app-menu>
-        </div>
-        <div class="col-8" id="main-container">
-            <app-search></app-search>
-            <div class="card" id="app-card">
-                <div class="row">
-                    <div class="col-md-12">
-                        <router-outlet></router-outlet>
-                    </div>
+<nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="sidenav-main">
+    <div class="container-fluid">
+        <app-menu></app-menu>
+    </div>
+</nav>
+<div class="main-content">
+    <app-header></app-header>
+    <div class="container-fluid mt--7">
+        <router-outlet></router-outlet>
+
+        <footer class="footer">
+            <div class="row align-items-center justify-content-xl-between">
+            <div class="col-xl-6">
+                <div class="copyright text-center text-xl-left text-muted">
+                © 2019 <a href="https://taskworks.com" class="font-weight-bold ml-1" target="_blank">Taskworks</a>
                 </div>
             </div>
-        </div>
+            <div class="col-xl-6">
+                <ul class="nav nav-footer justify-content-center justify-content-xl-end">
+                <li class="nav-item">
+                    <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="http://blog.creative-tim.com" class="nav-link" target="_blank">Blog</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </footer>
     </div>
+    
 </div>

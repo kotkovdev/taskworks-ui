@@ -8,6 +8,7 @@ import { AuthComponent } from './auth/auth.component';
 import { MenuComponent } from './menu/menu.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { SearchComponent } from './search/search.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SearchComponent } from './search/search.component';
     AuthComponent,
     MenuComponent,
     TasksComponent,
-    SearchComponent
+    SearchComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
