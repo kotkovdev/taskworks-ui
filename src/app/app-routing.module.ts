@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { AuthComponent } from './auth/auth.component';
+import { Routes, RouterModule, ActivatedRoute } from '@angular/router';
 import { TasksComponent } from './tasks/tasks.component';
 import { TaskComponent } from './task/task.component';
+import { NewTaskComponent } from './new-task/new-task.component';
 
 const routes: Routes = [
   {
-    path: 'auth',
-    component: AuthComponent
+    path: ':project',
+    component: TasksComponent,
   },
   {
     path: 'task/:id',
@@ -16,6 +16,10 @@ const routes: Routes = [
   {
     path: 'tasks',
     component: TasksComponent
+  },
+  {
+    path: 'tasks/new',
+    component: NewTaskComponent
   }
 ];
 
@@ -23,4 +27,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+
+export class AppRoutingModule {}
