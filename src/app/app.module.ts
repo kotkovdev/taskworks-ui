@@ -11,6 +11,7 @@ import { SearchComponent } from './search/search.component';
 import { HeaderComponent } from './header/header.component';
 import { TaskComponent } from './task/task.component';
 import { NewTaskComponent } from './new-task/new-task.component';
+import { ReportsComponent } from './reports/reports.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NewTaskComponent } from './new-task/new-task.component';
     SearchComponent,
     HeaderComponent,
     TaskComponent,
-    NewTaskComponent
+    NewTaskComponent,
+    ReportsComponent
   ],
   imports: [
     BrowserModule,
