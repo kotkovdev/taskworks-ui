@@ -10,10 +10,7 @@ export class TasksService extends HttpHelperService {
   constructor(private http: HttpClient) { super() }
 
   getAll() {
-    /*return this.http.get('/assets/config.json').subscribe(data => {
-      console.log(data);
-    });*/
-    return this.http.get(this.baseURL + '/user/all').subscribe(data => {
+    return this.http.get(this.baseURL + '/user/all?api_token=' + this.token).subscribe(data => {
       console.log(data);
     })
   }

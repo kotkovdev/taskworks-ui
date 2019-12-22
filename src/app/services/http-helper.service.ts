@@ -5,5 +5,6 @@ import { Injectable } from '@angular/core';
 })
 export class HttpHelperService {
   baseURL: string = 'http://localhost:8000/api';
-  constructor() { }
+  token: string = sessionStorage.getItem('api_token');
+  constructor() {}
 }

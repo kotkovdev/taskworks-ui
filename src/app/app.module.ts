@@ -12,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { TaskComponent } from './task/task.component';
 import { NewTaskComponent } from './new-task/new-task.component';
 import { ReportsComponent } from './reports/reports.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ReportsComponent } from './reports/reports.component';
     HeaderComponent,
     TaskComponent,
     NewTaskComponent,
-    ReportsComponent
+    ReportsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
