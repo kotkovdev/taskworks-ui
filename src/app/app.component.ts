@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
@@ -13,7 +13,7 @@ import { Location } from '@angular/common';
 export class AppComponent {
   title = 'TaskWorks';
 
-  constructor(public route: ActivatedRoute) {}
+  constructor(@Inject(ActivatedRoute) public route: ActivatedRoute) {}
   
   ngOnInit() {
     console.log(this.route.children);

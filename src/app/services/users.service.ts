@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs-compat/Observable';
+import { Observable } from 'rxjs/Observable';
 import { HttpHelperService } from './http-helper.service';
 import { User } from '../interfaces/User';
 

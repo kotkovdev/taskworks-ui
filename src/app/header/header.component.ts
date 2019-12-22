@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { GlobalsService } from '../services/globals.service';
 
 @Component({
   selector: 'app-header',
@@ -9,15 +7,13 @@ import { GlobalsService } from '../services/globals.service';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private router: Router, private globals:GlobalsService) { }
+  constructor() { }
 
   ngOnInit() {
   }
 
   changeProject(projectName) {
-    console.log(projectName);
-    this.router.navigateByUrl('/' + projectName);
-    this.globals.set('project-name', projectName);
+    
   }
 
 }

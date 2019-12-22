@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { UsersService } from '../services/users.service';
 
 @Component({
@@ -10,7 +10,7 @@ export class NewTaskComponent implements OnInit {
 
   users = Array();
 
-  constructor(private usersService : UsersService) { }
+  constructor(@Inject(UsersService) private usersService : UsersService) { }
 
   ngOnInit() {
     //this.users = this.usersService.getAll();
