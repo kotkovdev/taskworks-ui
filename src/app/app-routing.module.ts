@@ -4,17 +4,14 @@ import { TasksComponent } from './tasks/tasks.component';
 import { TaskComponent } from './task/task.component';
 import { NewTaskComponent } from './new-task/new-task.component';
 import { ReportsComponent } from './reports/reports.component';
-import { LoginComponent } from './login/login.component';
+import { ProjectsListComponent } from './Projects/projects-list/projects-list.component';
+import { NewProjectComponent } from './Projects/new-project/new-project.component';
 
 const routes: Routes = [
   {
     path: '',
     redirectTo: '/login',
     pathMatch: 'full'
-  },
-  {
-    path: 'login',
-    component: LoginComponent,
   },
   {
     path: 'task/:id',
@@ -31,6 +28,14 @@ const routes: Routes = [
   {
     path: 'reports',
     component: ReportsComponent
+  },
+  {
+    path: 'projects',
+    component: ProjectsListComponent
+  },
+  {
+    path: 'projects/new',
+    component: NewProjectComponent
   }
 ];
 

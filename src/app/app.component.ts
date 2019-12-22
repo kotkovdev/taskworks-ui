@@ -16,6 +16,5 @@ export class AppComponent {
   constructor(@Inject(ActivatedRoute) public route: ActivatedRoute) {}
   
   ngOnInit() {
-    console.log(this.route.children);
   }
 }

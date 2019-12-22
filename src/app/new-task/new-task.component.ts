@@ -1,5 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { UsersService } from '../services/users.service';
+import { Observable } from 'rxjs';
+import { User } from '../interfaces/User';
 
 @Component({
   selector: 'app-new-task',
@@ -8,13 +10,14 @@ import { UsersService } from '../services/users.service';
 })
 export class NewTaskComponent implements OnInit {
 
-  users = Array();
+  users: any[] = [];
 
   constructor(@Inject(UsersService) private usersService : UsersService) { }
 
   ngOnInit() {
-    //this.users = this.usersService.getAll();
-    console.log(this.users);
+    this.usersService.getAll().subscribe(users => {
+      this.users  = users;
+    });
   }
 
 }
