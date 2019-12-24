@@ -1,4 +1,4 @@
-<form id="new-project" (ngSubmit)="onSubmit()" #newProjectForm="ngForm">
+<form id="new-project" (ngSubmit)="onSubmit(formData)" #newProjectForm="ngForm" [formGroup]="projectForm">
     <div class="row m-1">
         <div class="col">
             <div class="card shadow">
@@ -12,7 +12,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="title">Name</label>
-                                        <input type="text" class="form-control" id="name" name="name">
+                                        <input type="text" class="form-control" id="name" formControlName="name">
                                     </div>
                                 </div>
                             </div>
@@ -20,7 +20,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="title">Repository URL</label>
-                                        <input type="text" class="form-control" id="repository_url">
+                                        <input type="text" class="form-control" id="repository_url" formControlName="repository">
                                     </div>
                                 </div>
                             </div>
@@ -28,7 +28,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="description">Description</label>
-                                        <textarea name="description" id="description" cols="30" rows="10" class="form-control"></textarea>
+                                        <textarea id="description" cols="30" rows="10" class="form-control" formControlName="description"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -36,7 +36,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="description">RSA</label>
-                                        <textarea name="rsa" id="rsa" cols="30" rows="10" class="form-control"></textarea>
+                                        <textarea id="rsa" cols="30" rows="10" class="form-control" formControlName="rsa"></textarea>
                                     </div>
                                 </div>
                             </div>
