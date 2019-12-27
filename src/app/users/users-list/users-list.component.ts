@@ -10,7 +10,8 @@ export class UsersListComponent implements OnInit {
 
   users: any[] = [];
 
-  constructor(@Inject(UsersService) private usersService: UsersService) { }
+  constructor(
+    @Inject(UsersService) private usersService: UsersService) { }
 
   ngOnInit() {
     this.usersService.getAll().subscribe(users => {

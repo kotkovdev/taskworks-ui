@@ -15,6 +15,7 @@ import { ReportsComponent } from './reports/reports.component';
 import { ProjectsListComponent } from './Projects/projects-list/projects-list.component';
 import { NewProjectComponent } from './Projects/new-project/new-project.component';
 import { UsersListComponent } from './users/users-list/users-list.component';
+import { UserFormComponent } from './users/user-form/user-form.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { UsersListComponent } from './users/users-list/users-list.component';
     ProjectsListComponent,
     NewProjectComponent,
     UsersListComponent,
+    UserFormComponent,
   ],
   imports: [
     BrowserModule,

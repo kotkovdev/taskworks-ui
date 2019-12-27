@@ -15,4 +15,9 @@ export class UsersService extends HttpHelperService {
   getAll() : Observable<User[]> {
     return <Observable<User[]>> this.http.get(this.baseURL + '/user/all?api_token=' + this.token);
   }
+
+  create(user: User) : Observable<User> {
+    console.log("creating user");
+    return <Observable<User>> this.http.post(this.baseURL + '/user/new?api_token=' + JSON.stringify(this.token), user);
+  }
 }

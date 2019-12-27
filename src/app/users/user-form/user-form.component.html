@@ -1,0 +1,65 @@
+<form id="new-project" (ngSubmit)="onSubmit(formData)" #newProjectForm="ngForm" [formGroup]="userForm">
+    <div class="row m-1">
+        <div class="col">
+            <div class="card shadow">
+                <div class="card-header border-0">
+                    <h1 class="mb-0">Create new user</h1>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="title">Name</label>
+                                        <input type="text" class="form-control" id="name" formControlName="name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="title">Email</label>
+                                        <input type="text" class="form-control" id="email" formControlName="email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="title">Password</label>
+                                        <input type="password" class="form-control" id="password" formControlName="password">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="title">Repeat password</label>
+                                        <input type="password" class="form-control" id="rPassword" formControlName="rPassword">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Access to Projects</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer py-4">
+                    <div class="float-right">
+                        <button class="btn btn-default">Cancel</button>
+                        <button class="btn btn-success" type="submit">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
