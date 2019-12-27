@@ -1,0 +1,43 @@
+<div class="row m-1">
+    <div class="col">
+      <div class="card shadow">
+        <div class="card-header border-0">
+          <div class="float-left">
+              <h1 class="mb-0">Users</h1>
+          </div>
+          <div class="float-right">
+            <a class="btn btn-success" routerLink="/users/new"><span class="glyphicon glyphicon-plus"></span> Create new</a>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="table align-items-center table-flush">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col"></th>
+                <th scope="col">Name</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr *ngFor="let user of users">
+                <td scope="row">{{ user.id }}</td>
+                <td scope="row">
+                    <a href="#" class="avatar avatar-sm" data-toggle="tooltip" data-original-title="Ryan Tompson">
+                        <img alt="Image placeholder" src="../assets/img/theme/team-1-800x800.jpg" class="rounded-circle">
+                    </a>
+                </td>
+                <td scope="row">
+                  <a href="#">{{ user.name }}</a>
+                </td>
+                <td scope="row">
+                    <span class="badge badge-success">Active</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>

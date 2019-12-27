@@ -14,6 +14,7 @@ import { NewTaskComponent } from './new-task/new-task.component';
 import { ReportsComponent } from './reports/reports.component';
 import { ProjectsListComponent } from './Projects/projects-list/projects-list.component';
 import { NewProjectComponent } from './Projects/new-project/new-project.component';
+import { UsersListComponent } from './users/users-list/users-list.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { NewProjectComponent } from './Projects/new-project/new-project.componen
     ReportsComponent,
     ProjectsListComponent,
     NewProjectComponent,
+    UsersListComponent,
   ],
   imports: [
     BrowserModule,
