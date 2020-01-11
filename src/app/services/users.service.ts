@@ -18,6 +18,6 @@ export class UsersService extends HttpHelperService {
 
   create(user: User) : Observable<User> {
     console.log("creating user");
-    return <Observable<User>> this.http.post(this.baseURL + '/user/new?api_token=' + JSON.stringify(this.token), user);
+    return <Observable<User>> this.http.post(this.baseURL + '/user/new?api_token=' + this.token, user);
   }
 }

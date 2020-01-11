@@ -11,11 +11,6 @@ import { UserFormComponent } from './users/user-form/user-form.component';
 
 const routes: Routes = [
   {
-    path: '',
-    redirectTo: '/login',
-    pathMatch: 'full'
-  },
-  {
     path: 'task/:id',
     component: TaskComponent
   },
