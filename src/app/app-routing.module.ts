@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, ActivatedRoute } from '@angular/router';
 import { TasksComponent } from './tasks/tasks.component';
-import { TaskComponent } from './task/task.component';
-import { NewTaskComponent } from './new-task/new-task.component';
+import { TaskComponent } from './tasks/task/task.component';
+import { NewTaskComponent } from './tasks/new-task/new-task.component';
 import { ReportsComponent } from './reports/reports.component';
 import { ProjectsListComponent } from './Projects/projects-list/projects-list.component';
 import { NewProjectComponent } from './Projects/new-project/new-project.component';

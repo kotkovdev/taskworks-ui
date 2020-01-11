@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import { UsersService } from '../services/users.service';
+import { UsersService } from '../../services/users.service';
 import { Observable } from 'rxjs';
-import { User } from '../interfaces/User';
+import { User } from '../../interfaces/User';
 
 @Component({
   selector: 'app-new-task',
