@@ -7,10 +7,10 @@ export interface User {
 
 export class User implements User {
     constructor(
-        id,
-        name,
-        email,
-        password
+        id: number,
+        name: string,
+        email: string,
+        password: string
     ) {
         this.id         = id;
         this.name       = name;

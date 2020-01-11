@@ -12,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { TaskComponent } from './tasks/task/task.component';
 import { NewTaskComponent } from './tasks/new-task/new-task.component';
 import { ReportsComponent } from './reports/reports.component';
+import { NewReportComponent } from './reports/new-report/new-report.component';
 import { ProjectsListComponent } from './Projects/projects-list/projects-list.component';
 import { NewProjectComponent } from './Projects/new-project/new-project.component';
 import { UsersListComponent } from './users/users-list/users-list.component';
@@ -31,6 +32,7 @@ import { UserFormComponent } from './users/user-form/user-form.component';
     NewProjectComponent,
     UsersListComponent,
     UserFormComponent,
+    NewReportComponent,
   ],
   imports: [
     BrowserModule,

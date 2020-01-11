@@ -1,1 +1,46 @@
-<p>reports works!</p>
+<div class="row m-1">
+    <div class="col">
+        <div class="card shadow">
+            <div class="card-header border-0">
+                <div class="float-left">
+                    <h1 class="mb-0">Reports</h1>
+                </div>
+                <div class="float-right">
+                    <a class="btn btn-success" routerLink="/reports/new"><span class="glyphicon glyphicon-plus"></span>Create new</a>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table align-items-center table-flush">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Attached Task</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Created</th>
+                            <th scope="col">Updated</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let report of reports">
+                            <td scope="row">{{ report.id }}</td>
+                            <td scope="row">
+                                <a href="/report/1">{{ report.title }}</a>
+                            </td>
+                            <td>
+                                <a routerLink="/task/1">Task name</a>
+                            </td>
+                            <td>
+                                Here is status
+                            </td>
+                            <td>{{ report.created_at }}</td>
+                            <td>{{ report.updated_at }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card-footer py-4">
+            </div>
+        </div>
+    </div>
+</div>

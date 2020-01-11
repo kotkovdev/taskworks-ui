@@ -8,6 +8,7 @@ import { ProjectsListComponent } from './Projects/projects-list/projects-list.co
 import { NewProjectComponent } from './Projects/new-project/new-project.component';
 import { UsersListComponent } from './users/users-list/users-list.component';
 import { UserFormComponent } from './users/user-form/user-form.component';
+import { NewReportComponent } from './reports/new-report/new-report.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path: 'reports',
     component: ReportsComponent
+  },
+  {
+    path: 'reports/new',
+    component: NewReportComponent
   },
   {
     path: 'projects',

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Injectable, Inject } from '@angular/core';
+import { Report } from '../interfaces/Report';
+import { ReportsService } from '../services/reports.service';
 
 @Component({
   selector: 'app-reports',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReportsComponent implements OnInit {
 
-  constructor() { }
+  constructor(@Inject(ReportsService) private reportsService:ReportsService) { }
+
+  reports: Report[];
 
   ngOnInit() {
+    this.reportsService.getAll().subscribe((reports) => {
+      this.reports = reports;
+    });
   }
-
 }
