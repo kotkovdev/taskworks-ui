@@ -18,4 +18,8 @@ export class TasksService extends HttpHelperService {
   create(task: Task) {
     return <Observable<Task>> this.http.post(this.url('/task/new'), task);
   }
+
+  getById(taskId) {
+    return <Observable<Task>> this.http.get(this.url('/task/' + taskId));
+  }
 }

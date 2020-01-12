@@ -18,6 +18,7 @@ import { NewProjectComponent } from './Projects/new-project/new-project.componen
 import { UsersListComponent } from './users/users-list/users-list.component';
 import { UserFormComponent } from './users/user-form/user-form.component';
 import { EditReportComponent } from './reports/edit-report/edit-report.component';
+import { PreloaderComponent } from './preloader/preloader.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { EditReportComponent } from './reports/edit-report/edit-report.component
     UserFormComponent,
     NewReportComponent,
     EditReportComponent,
+    PreloaderComponent,
   ],
   imports: [
     BrowserModule,
