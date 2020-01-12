@@ -6,6 +6,9 @@
                     <h1 class="mb-0"><b>#{{task.id}}</b> {{task.title}}</h1>
                 </div>
                 <div class="float-right">
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#report" aria-expanded="false" aria-controls="report">
+                        Show attached report
+                    </button>
                     <button class="btn btn-primary">Edit</button>
                 </div>
             </div>
@@ -31,7 +34,35 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
+                        <div class="collapse" id="report">
+                            <h3><strong>Report:</strong> #{{task.report.id}} {{task.report.title}}</h3>
+                            <div class="card card-body">
+                                <pre>
+                                    {{task.report.description}}
+                                </pre>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
                         <div>{{task.description}}</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card card-body">
+                            <h3>Changes history</h3>
+                            <pre>
+                                Here is will be history of task changes
+                            </pre>
+                        </div>
                     </div>
                 </div>
             </div>
