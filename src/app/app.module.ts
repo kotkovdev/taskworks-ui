@@ -17,6 +17,7 @@ import { ProjectsListComponent } from './Projects/projects-list/projects-list.co
 import { NewProjectComponent } from './Projects/new-project/new-project.component';
 import { UsersListComponent } from './users/users-list/users-list.component';
 import { UserFormComponent } from './users/user-form/user-form.component';
+import { EditReportComponent } from './reports/edit-report/edit-report.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { UserFormComponent } from './users/user-form/user-form.component';
     UsersListComponent,
     UserFormComponent,
     NewReportComponent,
+    EditReportComponent,
   ],
   imports: [
     BrowserModule,

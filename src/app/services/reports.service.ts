@@ -17,4 +17,12 @@ export class ReportsService extends HttpHelperService {
   create(report: Report) : Observable<Report> {
     return <Observable<Report>> this.http.post(this.url('/report/new'), report);
   }
+
+  getById(reportId : number) {
+    return <Observable<Report>> this.http.get(this.url('/report/' + reportId));
+  }
+
+  update(reportId: number, report: Report) {
+    return <Observable<Report>> this.http.post(this.url('/report/' + reportId), report);
+  }
 }

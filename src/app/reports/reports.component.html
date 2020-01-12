@@ -25,7 +25,7 @@
                         <tr *ngFor="let report of reports">
                             <td scope="row">{{ report.id }}</td>
                             <td scope="row">
-                                <a href="/report/1">{{ report.title }}</a>
+                                <a [routerLink]="['/report',report.id]">{{ report.title }}</a>
                             </td>
                             <td>
                                 <a routerLink="/task/1">Task name</a>

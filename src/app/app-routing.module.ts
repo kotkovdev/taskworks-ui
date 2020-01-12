@@ -9,8 +9,12 @@ import { NewProjectComponent } from './Projects/new-project/new-project.componen
 import { UsersListComponent } from './users/users-list/users-list.component';
 import { UserFormComponent } from './users/user-form/user-form.component';
 import { NewReportComponent } from './reports/new-report/new-report.component';
+import { EditReportComponent } from './reports/edit-report/edit-report.component';
 
 const routes: Routes = [
+  /**
+   * Tasks
+   */
   {
     path: 'task/:id',
     component: TaskComponent
@@ -23,6 +27,9 @@ const routes: Routes = [
     path: 'tasks/new',
     component: NewTaskComponent
   },
+  /**
+   * Reports
+   */
   {
     path: 'reports',
     component: ReportsComponent
@@ -32,6 +39,13 @@ const routes: Routes = [
     component: NewReportComponent
   },
   {
+    path: 'report/:id',
+    component: EditReportComponent
+  },
+  /**
+   * Projects
+   */
+  {
     path: 'projects',
     component: ProjectsListComponent
   },
@@ -39,6 +53,9 @@ const routes: Routes = [
     path: 'projects/new',
     component: NewProjectComponent
   },
+  /**
+   * Users
+   */
   {
     path: 'users',
     component: UsersListComponent
