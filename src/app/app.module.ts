@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { NgForm, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgHttpLoaderModule } from 'ng-http-loader';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,7 +19,6 @@ import { NewProjectComponent } from './Projects/new-project/new-project.componen
 import { UsersListComponent } from './users/users-list/users-list.component';
 import { UserFormComponent } from './users/user-form/user-form.component';
 import { EditReportComponent } from './reports/edit-report/edit-report.component';
-import { PreloaderComponent } from './preloader/preloader.component';
 
 @NgModule({
   declarations: [
@@ -36,12 +36,12 @@ import { PreloaderComponent } from './preloader/preloader.component';
     UserFormComponent,
     NewReportComponent,
     EditReportComponent,
-    PreloaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    NgHttpLoaderModule.forRoot(),
     FormsModule,
     ReactiveFormsModule
   ],

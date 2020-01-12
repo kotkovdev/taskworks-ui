@@ -1,4 +1,4 @@
-<div class="row m-1" *ngIf="task; else preloader">
+<div class="row m-1" *ngIf="task">
     <div class="col">
         <div class="card shadow">
             <div class="card-header border-0">
@@ -41,6 +41,3 @@
         </div>
     </div>
 </div>
-<ng-template #preloader>
-    <app-preloader></app-preloader>
-</ng-template>
