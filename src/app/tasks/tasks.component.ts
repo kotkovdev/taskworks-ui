@@ -1,5 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { TasksService } from './../services/tasks.service';
+import { Task } from '../interfaces/Task';
 
 @Component({
   selector: 'app-tasks',
@@ -8,14 +9,17 @@ import { TasksService } from './../services/tasks.service';
 })
 export class TasksComponent implements OnInit {
 
-  tasks = {};
+  tasks: Task[];
+
   constructor(@Inject(TasksService) private tasksService: TasksService) {
     
   }
 
   ngOnInit() {
-    /*this.tasks = this.tasksService.getAll();
-    console.log(this);*/
+    this.tasksService.getAll().subscribe(tasks => {
+      this.tasks = tasks;
+      console.log(this.tasks);
+    });
   }
 
 }

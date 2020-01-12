@@ -12,9 +12,7 @@ export class TasksService extends HttpHelperService {
   constructor(private http: HttpClient) { super() }
 
   getAll() {
-    return this.http.get(this.baseURL + '/user/all?api_token=' + this.token).subscribe(data => {
-      console.log(data);
-    })
+    return <Observable<Task[]>> this.http.get(this.url('/task/all'));
   }
 
   create(task: Task) {
