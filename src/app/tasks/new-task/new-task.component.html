@@ -6,6 +6,9 @@
                     <h1 class="mb-0">Create new task</h1>
                 </div>
                 <div class="card-body">
+                    <div *ngIf="taskSaved" class="alert alert-success" role="alert">
+                        <strong>Success!</strong> New task was be saved!
+                    </div>
                     <div class="row">
                         <div class="col-md-8">
                             <div class="row">

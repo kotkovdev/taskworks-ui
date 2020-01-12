@@ -18,6 +18,7 @@ import { TasksService } from 'src/app/services/tasks.service';
 export class NewTaskComponent implements OnInit {
 
   taskId: number;
+  taskSaved: boolean = false;
   taskForm: FormGroup;
   task: Task;
 
@@ -74,6 +75,7 @@ export class NewTaskComponent implements OnInit {
       if (this.taskId == null) {
         this.tasksService.create(this.task).subscribe(task => {
           this.task = task;
+          this.taskSaved = true;
         });
       } else {
         /* here is saving exist task */
