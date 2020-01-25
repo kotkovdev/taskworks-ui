@@ -20,6 +20,7 @@ import { UsersListComponent } from './users/users-list/users-list.component';
 import { UserFormComponent } from './users/user-form/user-form.component';
 import { EditReportComponent } from './reports/edit-report/edit-report.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { MessagesFormComponent } from './messages/messages-form/messages-form.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     NewReportComponent,
     EditReportComponent,
     DashboardComponent,
+    MessagesFormComponent,
   ],
   imports: [
     BrowserModule,
