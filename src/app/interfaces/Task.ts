@@ -5,7 +5,8 @@ export interface Task {
     user_id: number,
     report_id: number,
     project_id: number,
-    description: string
+    description: string,
+    completion: number
 }
 
 export class Task implements Task {
@@ -16,7 +17,8 @@ export class Task implements Task {
         user_id: number,
         report_id: number,
         project_id: number,
-        description: string
+        description: string,
+        completion: number = 0
     ) {
         this.id = id;
         this.title = title;
@@ -25,5 +27,6 @@ export class Task implements Task {
         this.report_id = report_id;
         this.project_id = project_id;
         this.description = description;
+        this.completion = completion;
     }
 }
