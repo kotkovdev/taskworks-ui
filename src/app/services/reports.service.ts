@@ -3,6 +3,7 @@ import { HttpHelperService } from './http-helper.service';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Report } from '../interfaces/Report';
+import { ReportStatistic } from '../interfaces/ReportStatistic';
 
 @Injectable({
   providedIn: 'root'
@@ -24,5 +25,9 @@ export class ReportsService extends HttpHelperService {
 
   update(reportId: number, report: Report) {
     return <Observable<Report>> this.http.post(this.url('/report/' + reportId), report);
+  }
+
+  getStatistic() {
+    return <Observable<ReportStatistic>> this.http.get(this.url('/report/statistic'));
   }
 }

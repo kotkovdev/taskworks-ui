@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { NgForm, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgHttpLoaderModule } from 'ng-http-loader';
-
+import { ChartsModule } from 'ng2-charts';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -19,6 +19,7 @@ import { NewProjectComponent } from './Projects/new-project/new-project.componen
 import { UsersListComponent } from './users/users-list/users-list.component';
 import { UserFormComponent } from './users/user-form/user-form.component';
 import { EditReportComponent } from './reports/edit-report/edit-report.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { EditReportComponent } from './reports/edit-report/edit-report.component
     UserFormComponent,
     NewReportComponent,
     EditReportComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,7 +45,8 @@ import { EditReportComponent } from './reports/edit-report/edit-report.component
     HttpClientModule,
     NgHttpLoaderModule.forRoot(),
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

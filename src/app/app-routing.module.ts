@@ -10,8 +10,13 @@ import { UsersListComponent } from './users/users-list/users-list.component';
 import { UserFormComponent } from './users/user-form/user-form.component';
 import { NewReportComponent } from './reports/new-report/new-report.component';
 import { EditReportComponent } from './reports/edit-report/edit-report.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    component: DashboardComponent
+  },
   /**
    * Tasks
    */
